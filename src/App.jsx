@@ -1,21 +1,12 @@
 import React from 'react';
-import Profile from './Profile';
-
-const userData = {
-  username: 'Jacques Gluke',
-  tag: 'jgluke',
-  location: 'Ocho Rios, Jamaica',
-  avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308,
-  },
-};
+import Profile from './Profile/Profile';
+import FriendList from './FriendListItem/FriendListItem';
+import userData from './Profile/userData.json';
+import userData2 from './FriendListItem/userData2.json';
 
 const App = () => {
   return (
-    <>
+    <div>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -23,7 +14,9 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </>
+      <h2>My Friends</h2>
+      <FriendList friends={userData.friends} />
+    </div>
   );
 };
 

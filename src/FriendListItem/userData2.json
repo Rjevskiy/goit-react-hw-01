@@ -1,0 +1,16 @@
+{
+  "username": "Jacques Gluke",
+  "tag": "jgluke",
+  "location": "Ocho Rios, Jamaica",
+  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  "stats": {
+    "followers": 5603,
+    "views": 4827,
+    "likes": 1308
+  },
+  "friends": [
+    { "id": 1, "name": "John Doe", "isOnline": true },
+    { "id": 2, "name": "Jane Smith", "isOnline": false },
+    { "id": 3, "name": "Alice Johnson", "isOnline": true }
+  ]
+}
