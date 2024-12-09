@@ -1,5 +1,4 @@
 
-/* Стили для таблицы */
 .transaction-history {
     width: 100%;
     border-collapse: collapse;
@@ -7,6 +6,7 @@
     font-size: 16px;
     text-align: left;
     max-width: 900px;
+    margin: auto;
 }
 
 .transaction-history th {

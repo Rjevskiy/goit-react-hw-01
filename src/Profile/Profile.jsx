@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import profileUser from './profileUser.css';
+import "./Profile.css";
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div className='profileUser'>
+    <div className="profile">
       <div>
         <img
           src={image || 'https://via.placeholder.com/150'}
           alt="User avatar"
         />
-        <p>{name || 'Unknown User'}</p>
+        <h2>{name || 'Unknown User'}</h2>
         <p>@{tag || 'unknown'}</p>
         <p>{location || 'Unknown Location'}</p>
       </div>

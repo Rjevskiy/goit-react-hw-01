@@ -1,5 +1,5 @@
-.profileUser {
-    border: 1px solid #ccc;
+.profile {
+    border: 3px solid #333;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -7,30 +7,64 @@
     margin: auto;
     background-color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    max-width: 350px;
 }
 
 .profile img {
     border-radius: 50%;
-    width: 100px;
+    width: 200px;
     margin-bottom: 15px;
+    
 }
 
-.profile .name {
+.profile h2{
     font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 5px;
+    color: gray;
 }
 
-.profile .tag,
-.profile .location {
+.profile ul {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: grey;
+    border: 2px solid #333;
+    border-radius: 6px;
+}
+
+.profile tag,
+.profile location {
     color: gray;
     margin: 0;
+    
 }
 
-.profile .stats {
+.profile stats {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    border-top: 1px solid #eee}
+    border-top: 1px solid #eee
+    
+    }
 
+.profile span {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+       
+    
+        a {
+            text-decoration: none;
+        }
