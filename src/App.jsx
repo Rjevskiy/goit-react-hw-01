@@ -2,7 +2,7 @@ import React from 'react';
 import Profile from './Profile/Profile';
 import FriendList from './FriendList/FriendList';
 import userData from './Profile/userData.json';
-import userData2 from './FriendList/userData2.json';
+import friends from './FriendList/friends.json';
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         stats={userData.stats}
       />
       <h2>My Friends</h2>
-      <FriendList friends={userData2.friends} />
+      <FriendList friends={friends} />
     </div>
   );
 };

@@ -1,12 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import "./FriendListItem.css"; // Підключаємо CSS-стилі
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div>
-      <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      <p>{isOnline ? 'Online' : 'Offline'}</p>
+    <div className="friend-item">
+      <img src={avatar} alt="Avatar" width="48" className="friend-avatar" />
+      <p className="friend-name">{name}</p>
+      <p className={`friend-status ${isOnline ? "online" : "offline"}`}>
+        {isOnline ? "Online" : "Offline"}
+      </p>
     </div>
   );
 };
@@ -18,4 +21,3 @@ FriendListItem.propTypes = {
 };
 
 export default FriendListItem;
-
