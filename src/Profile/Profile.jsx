@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import profileUser from './profileUser.css';
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
+    <div className='profileUser'>
       <div>
         <img
           src={image || 'https://via.placeholder.com/150'}
