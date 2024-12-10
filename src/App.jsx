@@ -1,12 +1,12 @@
 import React from 'react';
-import Profile from './Profile/Profile';
-import userData from './Profile/userData.json';
+import Profile from './components/Profile/Profile';
+import userData from './components/Profile/userData.json';
 
-import FriendList from './FriendList/FriendList';
-import friends from './FriendList/friends.json';
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
 
-import TransactionHistory from "./TransactionHistory/TransactionHistory";
-import transactions from "./TransactionHistory/transactions.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import transactions from "./components/TransactionHistory/transactions.json";
 
 const toCapitalCase = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 
